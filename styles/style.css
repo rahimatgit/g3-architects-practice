@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+}
+/* header and nav section */
+.header-container{
+    max-height: auto;
+    background: rgba(255, 144, 14, 0.10);
+}
+.nav-bar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+.nav-items{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+.banner-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner-img{
+    width: 100%;
+    height: 60vh;
+    padding-bottom: 2rem;
+}
+.banner-text, .banner-title{
+    text-align: center;
+}
+.banner-text{
+    margin: 15px 0;
+}
+.btn-primary{
+    background-color: #FF900E;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+/* Features section */
+.features-container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 5rem;
+}
+.features-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    
+}
+.features-detail{
+    /* height: 95vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+/*................
+Responsive styles for small device
+.....................*/
+@media screen and (max-width:576px) {
+    .nav-bar, .nav-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .features-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features-container{
+        flex-direction: column-reverse;
+    }
+}
