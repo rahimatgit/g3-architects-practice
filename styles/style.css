@@ -58,14 +58,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    
+}
+.img{
+    width: 100%;
 }
 .features-detail{
-    /* height: 95vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
 }
 
 /*................
